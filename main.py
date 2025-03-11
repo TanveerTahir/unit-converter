@@ -21,7 +21,7 @@ def convert_unit(value, unit_from, unit_to):
         return "Conversion not supported"
 
 
-st.title("Unit Converter")
+st.title("Unit Converter", min_value=1.0, step=1.0)
 
 value = st.number_input("Enter the value to convert")
 
